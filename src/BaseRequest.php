@@ -1,6 +1,6 @@
 <?php
 
-namespace Capstone\HTTP\Requests;
+namespace Capstone\Requests;
 
 class BaseRequest {
 	protected $url;
