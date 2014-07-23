@@ -1,7 +1,7 @@
 {
 	"name"        : "henderjon/chevron-requests",
 	"type"        : "library",
-	"description" : "simple objects for representing requests",
+	"description" : "simple objects for representing requests and responses",
 	"homepage"    : "http://github.com/henderjon/chevron.requests",
 	"license"     : "BSD-3-Clause",
 	"authors"     : [

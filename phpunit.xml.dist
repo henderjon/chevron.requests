@@ -1,5 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <phpunit bootstrap="tests/PHPUnit/bootstrap.php">
+	<php>
+		<server name="HTTPS" value="off" />
+		<server name="SERVER_NAME" value="local.chevron.com" />
+		<server name="SERVER_PORT" value="80" />
+		<server name="REQUEST_URI" value="/local/file/index.html?a=b&amp;c=d" />
+		<server name="REQUEST_METHOD" value="GET" />
+		<server name="PHP_AUTH_USER" value="Fido" />
+		<server name="PHP_AUTH_PW" value="Dog" />
+		<server name="HTTP_AUTHENTICATION" value="Basic RmlkbzpEb2c=" />
+	</php>
 	<testsuites>
 		<testsuite name="Library">
 			<directory>tests/PHPUnit</directory>

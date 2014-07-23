@@ -1,6 +1,6 @@
 <?php
 
-namespace Capstone\Requests;
+namespace Chevron\Requests;
 
 class CurrentRequest extends BaseRequest {
 
@@ -68,7 +68,7 @@ class CurrentRequest extends BaseRequest {
 				}
 			break;
 			default:
-				header('WWW-Authenticate: Basic realm="Capstone"');
+				header('WWW-Authenticate: Basic realm="Chevron"');
 				header('HTTP/1.0 401 Unauthorized');
 				printf("It was a good rain, the kind you wait for ...");
 				die();

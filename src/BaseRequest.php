@@ -1,6 +1,6 @@
 <?php
 
-namespace Capstone\Requests;
+namespace Chevron\Requests;
 
 class BaseRequest {
 	protected $url;
@@ -43,7 +43,7 @@ class BaseRequest {
 	 * parse a url into its component parts
 	 * @param string $url The URL to parse
 	 * @param string $action The action of the request
-	 * @return \Capstone\HTTP\Requests\BaseRequest
+	 * @return \Chevron\Requests\BaseRequest
 	 * @throws \Exception
 	 */
 	function parse( $url = "", $action = "GET" ){
@@ -186,10 +186,10 @@ class BaseRequest {
 	/**
 	 * method to take a Request object and reconstitute it to a full URL. if the
 	 * "host" param is empty, the URL will be relative
-	 * @param \Capstone\HTTP\Requests\BaseRequest $request The object to reconstitute
+	 * @param \Chevron\Requests\BaseRequest $request The object to reconstitute
 	 * @return string
 	 */
-	static function build_url(\Capstone\HTTP\Requests\BaseRequest $request){
+	static function build_url(\Chevron\Requests\BaseRequest $request){
 
 		$absolute = "";
 		if(!empty($request->info["host"])){
